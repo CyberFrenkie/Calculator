@@ -48,7 +48,7 @@ def calculate():
         rezultat = Label(root,text=int(a*b))
         rezultat.grid(row=8,column=1)
     elif o == "/":
-        while a==0 or b == 0: 
+        while a!=0 or b != 0: 
             try:
                 rezultat = Label(root,text=int(a/b))
                 rezultat.grid(row=8,column=1)                   
