@@ -49,15 +49,14 @@ def calculate():
         rezultat.grid(row=8,column=1)
     elif o == "/":
         while a==0 or b == 0: 
-            try:   
-                rezultat = Label(root,text = 'zero division')
-                rezultat.grid(row=8,column=1)   
+            try:
+                rezultat = Label(root,text=int(a/b))
+                rezultat.grid(row=8,column=1)                   
                 break
 
-            except ZeroDivisionError: 
-                rezultat = Label(root,text=int(a/b))
+            except ZeroDivisionError:                 
+                rezultat = Label(root,text = 'zero division')
                 rezultat.grid(row=8,column=1)
-                
                 break
 
 
